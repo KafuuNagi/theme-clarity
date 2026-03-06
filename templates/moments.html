@@ -7,6 +7,7 @@
     <link
       rel="stylesheet"
       th:if="${pluginFinder.available('PluginMoments')}"
+      data-pjax-conditional="moments"
       th:href="@{/assets/dist/moments.css?v={version}(version=${theme.spec.version})}"
     />
   </th:block>
